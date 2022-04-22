@@ -216,6 +216,11 @@ section {
     color: #000;
 }
 
+.contact .info a {
+    text-decoration: none;
+    color: #000;
+}
+
 .contact .info p {
     font-size: 1.3em;
 }
