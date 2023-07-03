@@ -52,7 +52,7 @@ section {
     align-items: center;
     background: url(IMAGES/bg.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-attachment: fixed;
 }
 
