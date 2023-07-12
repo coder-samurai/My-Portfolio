@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    color: #F4EFFA;
+    font-size: 40px;
+}
+
+.Main {
+    background-color: #532B88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoContainer {
+    position: absolute;
+}
+
+.Logo {
+    position: relative;
+    font-size: 40px;
+    z-index: 99;
+    color: #F4EFFA;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 30%;
+    animation: LogoEffect 150s linear infinite;
+}
+
+.Logo span {
+    color: #2F184B;
+}
+
+@keyframes LogoEffect {
+    100% {
+        background-position: 4000px 50px;
+    }
+}
+
+#visual1 {
+    animation: BobleAnimation 20s infinite;
+    z-index: 10;
+    position: absolute;
+}
+
+#visual2 {
+    animation: BobleAnimation 20s infinite;
+    z-index: 8;
+    position: absolute;
+}
+
+#visual3 {
+    animation: BobleAnimation 20s infinite;
+    z-index: 9;
+    position: absolute;
+}
+
+@keyframes BobleAnimation {
+    0%, 45%, 75%, 100%{
+        transform: rotate(360deg);
+        scale: 1;
+    }
+    70%, 90%{
+        scale: 0.5;
+    }
+    25%, 50%, 80%{
+        scale: 0.75;
+    }
+}
+
+.ButtonsContainer {
+    z-index: 99;
+    margin-top: 150px;
+    display: flex;
+    padding: 20px 20px;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.ButtonContainer button {
+    display: block;
+    width: 100px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #F4EFFA;
+    cursor: pointer;
+}
+
+.MainWave {
+    aspect-ratio: 900/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.LayerMain {
+    background-image: url("../assets/main-waves.svg");
+}
+
+.Info {
+    background-color: #161616;
+}

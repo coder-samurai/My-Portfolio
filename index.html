@@ -1,152 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <title>SamuraiCoder | Portfolio</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+        <script src="https://kit.fontawesome.com/115173e7fa.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet'>
+        <link rel='stylesheet' href='./CSS/style.css'>
+        <title>Samurai Coder | Portfolio</title>
     </head>
-
+    
     <body>
+        <section class="Main">
+            <div class="LogoContainer">
+                <h1 class="Logo">Who's <span>Samurai Coder?</span></h1>
+            </div>
+            
+            <div class="ButtonsContainer">
+                <div class="ButtonContainer">
+                    <button onclick="document.querySelector('.Info').scrollIntoView();">Me</button>
+                </div>
+                <div class="ButtonContainer">
+                    <button>Skills</button>
+                </div>
+                <div class="ButtonContainer">
+                    <button>Projects</button>
+                </div>
+                <div class="ButtonContainer">
+                    <button>Contact</button>
+                </div>
+            </div>
+            
+            <svg id="visual1" viewBox="0 0 900 450" width="900" height="450" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(433.14712177655815 213.96796243518395)">
+                    <path id="BlobFrom1" d="M101.3 -85.7C135.6 -66.9 170.8 -33.5 172.5 1.6C174.1 36.8 142.2 73.5 107.9 102.9C73.5 132.2 36.8 154.1 -1.5 155.6C-39.8 157.2 -79.7 138.3 -100.5 109C-121.3 79.7 -123.2 39.8 -129.8 -6.6C-136.4 -53 -147.7 -106.1 -126.9 -124.8C-106.1 -143.6 -53 -128 -9.8 -118.3C33.5 -108.5 66.9 -104.4 101.3 -85.7"
+                    fill="#9B72CF">
+                    </path>
+                </g>
+                <g transform="translate(472.0758861262724 238.39725203727505)" style="visibility: hidden">
+                    <path id="BlobTo1" d="M92.4 -98.9C119.2 -65.5 140.1 -32.8 140 -0.1C139.9 32.5 118.7 65.1 91.9 89.9C65.1 114.7 32.5 131.9 -3.8 135.6C-40.1 139.4 -80.1 129.8 -117.6 105C-155.1 80.1 -190.1 40.1 -183.3 6.8C-176.5 -26.5 -128 -53 -90.5 -86.4C-53 -119.7 -26.5 -159.9 3.1 -163C32.8 -166.1 65.5 -132.2 92.4 -98.9"
+                    fill="#9B72CF"></path>
+                </g>
+            </svg>
+            
+            <svg id="visual2" viewBox="0 0 900 450" width="900" height="450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(442.95438055444725 228.76951303482457)">
+                    <path id="BlobFrom2" d="M135 -121.4C168.7 -101.4 185.3 -50.7 176 -9.3C166.7 32.1 131.4 64.1 97.8 89.1C64.1 114.1 32.1 132.1 2.8 129.3C-26.5 126.5 -53 103 -82.5 78C-112 53 -144.5 26.5 -157.8 -13.3C-171 -53 -165.1 -106.1 -135.6 -126.1C-106.1 -146.1 -53 -133 -1.2 -131.9C50.7 -130.7 101.4 -141.4 135 -121.4"
+                    fill="#C8B1E4"></path>
+                </g>
+                <g transform="translate(466.958530394019 209.66411785239637)" style="visibility: hidden">
+                    <path id="BlobTo2" d="M105.4 -114.2C126.9 -83.9 128 -42 133.5 5.5C139 53 149.1 106.1 127.6 143.2C106.1 180.4 53 201.7 13.3 188.4C-26.5 175.2 -53 127.4 -88.4 90.2C-123.7 53 -167.9 26.5 -173.9 -6.1C-180 -38.7 -148 -77.3 -112.6 -107.6C-77.3 -138 -38.7 -160 1.6 -161.6C42 -163.3 83.9 -144.6 105.4 -114.2"
+                    fill="#C8B1E4"></path>
+                </g>
+            </svg>
+            
+            <svg id="visual3" viewBox="0 0 900 450" width="900" height="450" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(435.61691586152966 185.75937251353375)">
+                    <path id="BlobFrom3"
+                        d="M44 -74.1C58 -68.1 71 -58.3 92.7 -45.3C114.3 -32.3 144.7 -16.2 160.5 9.2C176.4 34.5 177.8 69 167.3 101.3C156.8 133.7 134.4 163.8 104.5 184.1C74.7 204.3 37.3 214.7 6.4 203.5C-24.5 192.4 -49 159.9 -76.7 138.4C-104.4 116.9 -135.4 106.4 -143.1 85.2C-150.9 64 -135.4 32 -132.8 1.5C-130.2 -29 -140.5 -58 -135 -83.3C-129.6 -108.5 -108.6 -130 -83.4 -129.6C-58.3 -129.2 -29.2 -106.8 -7.1 -94.5C15 -82.2 30 -80.1 44 -74.1"
+                        fill="none" stroke="#F4EFFA" stroke-width="6"></path>
+                </g>
+                <g transform="translate(434.33671710397107 202.58429372473978)" style="visibility: hidden">
+                    <path id="BlobTo3"
+                        d="M86.2 -138.7C110.5 -135.4 128 -109.7 149.2 -82.8C170.3 -56 195.2 -28 193.3 -1.1C191.4 25.8 162.8 51.7 135.2 67.3C107.5 82.8 80.7 88.2 58.4 105.6C36 123 18 152.5 -9.7 169.4C-37.5 186.3 -75 190.6 -93.2 170.7C-111.4 150.9 -110.2 107 -123.3 74.5C-136.4 42 -163.7 21 -162 1C-160.2 -19 -129.5 -38 -104.7 -50.2C-79.9 -62.4 -61 -67.7 -44.6 -75.6C-28.1 -83.4 -14.1 -93.7 8.5 -108.4C31 -123 62 -142.1 86.2 -138.7"
+                        fill="none" stroke="#F4EFFA" stroke-width="6"></path>
+                </g>
+            </svg>
+            
+            <script>
+                const tween1 = KUTE.fromTo(
+                    "#BlobFrom1",
+                    { path: "#BlobFrom1" },
+                    { path: "#BlobTo1" },
+                    { repeat: 999, duration: 3000, yoyo: true }
+                );
+                tween1.start();
+                const tween2 = KUTE.fromTo(
+                    "#BlobFrom2",
+                    { path: "#BlobFrom2" },
+                    { path: "#BlobTo2" },
+                    { repeat: 999, duration: 3000, yoyo: true }
+                );
+                tween2.start();
+                const tween3 = KUTE.fromTo(
+                    "#BlobFrom3",
+                    { path: "#BlobFrom3" },
+                    { path: "#BlobTo3" },
+                    { repeat: 999, duration: 3000, yoyo: true }
+                );
+                tween3.start();
+            </script>
+        </section>
         
-        <header>
-            <a href="#" class="logo">samuraicoder</a>
-            <nav class="navigation">
-                <a href="#me">Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-
-
-        <section class="main">
-            <div>
-                <h2>Welcome, I'm SamuraiCoder<br><span>Web Developer</span></h2>
-                <h3>Changing life with my codes</h3>
-                <a href="#projects" class="main-btn">View my work</a>
-                <div class="social-icons">
-                    <a href="https://instagram.com/samuraicoder" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/coder-samurai"target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://twitter.com/samuraicoder0"target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
+        <div class="MainWave LayerMain"></div>
+        
+        <section class="Info" id="Me">
+            <h1>Me</h1>
         </section>
-
-
-        <section class="cards" id="me">
-            <h2 class="title">Me</h2>
-            <div class="content">
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="info">
-                        <h3>who am I?</h3>
-                        <p>I'm Anas, I'm 17 years and a programmer</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Why programming?</h3>
-                        <p>Isn't it cool to talk to Computer?</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="projects" id="projects">
-            <h2 class="title">Projects</h2>
-            <div class="content">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="IMAGES/image.jpg"/>
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Python Project (GeneratorFEC)</p>
-                        <strong class="project-title">
-                            <span>Module generator words</span>
-                            <a href="https://github.com/coder-samurai/GeneratorFEC" class="more-details" target="_blank">More details</a>
-                        </strong>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="IMAGES/image.jpg"/>
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Python Project (VerificationEmailC)</p>
-                        <strong class="project-title">
-                            <span>Module verification email</span>
-                            <a href="https://github.com/coder-samurai/VerificationEmailC" class="more-details" target="_blank">More details</a>
-                        </strong>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="IMAGES/image.jpg"/>
-                    </div>
-                    <div class="project-info">
-                        <p class="project-category">Python Project (instauserinfo)</p>
-                        <strong class="project-title">
-                            <span>Module get Instagram user info</span>
-                            <a href="https://github.com/coder-samurai/instauserinfo" class="more-details" target="_blank">More details</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="cards contact" id="contact">
-            <h2 class="title">Work together?</h2>
-            <div class="content">
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Phone</h3>
-                        <p>+31600000000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-at"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Email</h3>
-                        <p>aelboutaheri@gmail.com</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="info">
-                        <h3>Instagram</h3>
-                        <a href="https://instagram.com/samuraicoder" target="_blank"><p>@samuraicoder</p></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <footer class="footer">
-            <p class="footer-title">Copyrights © <span>Samurai Coder</span></p>
-            <div class="social-icons">
-                <a href="https://instagram.com/samuraicoder" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/coder-samurai"target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://twitter.com/samuraicoder0"target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-        </footer>
-
+        
+        <script src="./JS/script.js"></script>
     </body>
-
 </html>
